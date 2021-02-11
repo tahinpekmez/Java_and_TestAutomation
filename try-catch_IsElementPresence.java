@@ -1,8 +1,6 @@
 package presence;
 
 import org.testng.Assert;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class IsElementPresence{
 
