@@ -1,8 +1,9 @@
    package List;
    
-   import org.openqa.selenium.*;
-   import org.testng.Assert;
-   import java.util.List;
+
+   import org.openqa.selenium.*;  // Just for adding the code in below, to your project
+   import org.testng.Assert;     // Just for adding the code in below, to your project
+   import java.util.List;       // Just for adding the code in below, to your project
 
    
    public class ListExample{
