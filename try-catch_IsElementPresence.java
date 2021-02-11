@@ -1,6 +1,6 @@
 package presence;
 
-import org.testng.Assert;
+import org.testng.Assert; // Just for adding the code in below, to your project
 
 public class IsElementPresence{
 
