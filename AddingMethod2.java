@@ -14,7 +14,7 @@ public class AddingMethod2 {
     }
 
     // public static void findGrades(String studentName, int score) {} -->
-    // if we delete static front of the method we must create an object of class
+    // if we delete static front of the method we must create an instance of class
     public static String findGrades(int score) {
         String grade;
 
