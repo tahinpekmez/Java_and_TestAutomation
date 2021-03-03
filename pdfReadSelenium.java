@@ -8,21 +8,6 @@
 	import java.net.URL;
 // imports which require
 	
-	public int getPageCount(PDDocument doc){
-        int pageCount = doc.getNumberOfPages();
-        return pageCount;
-    }
-
-    public String pdfReading(String url) throws IOException{
-        URL pdfUrl = new URL(url);
-        InputStream in = pdfUrl.openStream();
-        BufferedInputStream bf = new BufferedInputStream(in);
-        PDDocument doc = PDDocument.load(bf);
-        int numberOfPages = getPageCount(doc);
-        String content = new PDFTextStripper().getText(doc);
-        return content;
-
-    }
 
     public void verifyContentInPDf(String orderID) {
         //specify the url of the pdf file
@@ -36,4 +21,22 @@
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+	public int getPageCount(PDDocument doc){
+        int pageCount = doc.getNumberOfPages();
+        return pageCount;
+    }
+
+
+    public String pdfReading(String url) throws IOException{
+        URL pdfUrl = new URL(url);
+        InputStream in = pdfUrl.openStream();
+        BufferedInputStream bf = new BufferedInputStream(in);
+        PDDocument doc = PDDocument.load(bf);
+        int numberOfPages = getPageCount(doc);
+        String content = new PDFTextStripper().getText(doc);
+        return content;
+
     }
