@@ -14,7 +14,7 @@
         String url ="url adress"+orderID;
         driver.get(url);
         try {
-            String pdfContent = readPdfContent(url);
+            String pdfContent = pdfReading(url);
             Assert.assertTrue(pdfContent.contains("Onaylandı"));
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -23,11 +23,6 @@
         }
     }
 
-
-	public int getPageCount(PDDocument doc){
-        int pageCount = doc.getNumberOfPages();
-        return pageCount;
-    }
 
 
     public String pdfReading(String url) throws IOException{
@@ -39,4 +34,10 @@
         String content = new PDFTextStripper().getText(doc);
         return content;
 
+    }
+
+
+	public int getPageCount(PDDocument doc){
+        int pageCount = doc.getNumberOfPages();
+        return pageCount;
     }
