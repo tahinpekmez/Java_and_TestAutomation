@@ -1,3 +1,4 @@
+// imports which require
 	import org.apache.pdfbox.pdmodel.PDDocument;
 	import org.apache.pdfbox.text.PDFTextStripper;
 	import java.io.InputStream;
@@ -5,13 +6,14 @@
 	import java.io.IOException;
 	import java.net.MalformedURLException;
 	import java.net.URL;
+// imports which require
 	
 	public int getPageCount(PDDocument doc){
         int pageCount = doc.getNumberOfPages();
         return pageCount;
     }
 
-    public String readPdfContent(String url) throws IOException{
+    public String pdfReading(String url) throws IOException{
         URL pdfUrl = new URL(url);
         InputStream in = pdfUrl.openStream();
         BufferedInputStream bf = new BufferedInputStream(in);
