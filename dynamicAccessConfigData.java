@@ -32,17 +32,12 @@ public class Configuration {
             System.err.println(e.getMessage());
         }
 
-        // close input stream to free resources
         try {
             instream.close();
         } catch (IOException ioe) { /* should not happen */ }
     }
 
-    /**
-     * Get the value of a property.
-     * @param name is the name of the property.
-     * @return the property value or null if not found.
-     */
+
     public String getProperty(String dataFromConfigFile) {
         return props.getProperty(dataFromConfigFile);
     }
