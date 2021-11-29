@@ -1,5 +1,4 @@
         public void readStringTxtFileAndAddToList(String fileName) throws IOException {
-
             BufferedReader bufReader = new BufferedReader(new FileReader(fileName));
             List <String> listOfLines = new ArrayList<>();
             String line = bufReader.readLine();
