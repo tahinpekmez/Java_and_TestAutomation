@@ -22,6 +22,6 @@ public class ReverseSublist {
         List<Integer> subPrice = price.subList(price.size() - b, price.size());
         // subPrice has sorted as a reverse
         subPrice.sort(Collections.reverseOrder());
-        System.out.println(subPrice);
+        System.out.println("subPrice: " + subPrice);
     }
 }
