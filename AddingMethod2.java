@@ -10,9 +10,9 @@ public class AddingMethod2 {
         note = findGrades(90);
         displayGrades(studentName, note);
 
-
     }
 
+    
     // public static void findGrades(String studentName, int score) {} -->
     // if we delete static front of the method we must create an instance of class
     public static String findGrades(int score) {
