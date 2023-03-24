@@ -31,8 +31,6 @@ public class AddingMethods {
 }
 
 
-
-
 //class Erhan{
 //
 //    public int a = 31;
