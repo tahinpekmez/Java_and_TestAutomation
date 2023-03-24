@@ -59,13 +59,6 @@ public class AddingMethods {
 
 
 
-
-
-
-
-
-
-
         /*
         studentName = "Murat";
         score = 80;
